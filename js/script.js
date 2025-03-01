@@ -27,6 +27,7 @@ for(const btnElement of boxButton){
     const btn = btnElement;
     
     
+    
     btn.addEventListener('click', function(event){
         alert('Board updated Successfully')
         event.target.setAttribute('disabled','disabled')        
@@ -43,9 +44,10 @@ for(const btnElement of boxButton){
         
         const p = document.createElement('p');
         
+        const taskMassage = event.target.parentElement.parentElement.childNodes[3].textContent;
         
         const time = hour+":"+minute+":"+second+" AM";
-        p.innerHTML =`<span class = 'mb-2'>You have Completed the task Fix Mobile Button Issue at  ${time}</span>`;
+        p.innerHTML =`<span class = 'mb-2'>You have Completed the task ${taskMassage} at  ${time}</span>`;
 
         activityMassage.appendChild(p);
         p.setAttribute('class','mb-2')
@@ -67,9 +69,10 @@ for(const btnElement of boxButton){
         }
         
         if(countDisabled >= btnLength){
-            alert('go home')
+            alert('congrats!!! You have completed all the current task')
         }
 
+        
         
 
         
