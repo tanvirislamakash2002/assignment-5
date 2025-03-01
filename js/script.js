@@ -1,9 +1,6 @@
 const boxButton = document.querySelectorAll('.box-btn');
 
-const x = document.getElementById('test');
-const y = x.getAttribute('disabled')
 
-console.log(y)
 
 let taskAssigned = document.getElementById('task-assigned').innerText;
 let numberReduce = document.getElementById('number-reduce').innerText;
@@ -59,6 +56,19 @@ for(const btnElement of boxButton){
 
         
 
+        const btnLength = boxButton.length;
+
+        let countDisabled = 0;
+        for(let i = 0; i<btnLength; i++){
+            const y = boxButton[i].getAttribute('disabled');
+            if(y === 'disabled'){
+                countDisabled++
+            }
+        }
+        
+        if(countDisabled >= btnLength){
+            alert('go home')
+        }
 
         
 
