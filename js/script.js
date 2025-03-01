@@ -1,7 +1,30 @@
 const boxButton = document.querySelectorAll('.box-btn');
 
+const x = document.getElementById('test');
+const y = x.getAttribute('disabled')
+
+console.log(y)
+
 let taskAssigned = document.getElementById('task-assigned').innerText;
 let numberReduce = document.getElementById('number-reduce').innerText;
+
+
+const date = new Date()
+const hour = date.getHours()
+const minute = date.getMinutes()
+const second = date.getSeconds()
+
+const dayArray = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+const dayNumber = date.getDate();
+const day = dayArray[date.getDay()];
+const monthArray = ['Jan.','Feb.','Mar.','Apr.','May.','Jun.','Jul.','Aug.','Sept.','Oct.','Nov.','Dec.']
+const month = monthArray[date.getMonth()];
+const year = date.getFullYear();
+
+
+
+document.getElementById('day').innerText= day+',';
+document.getElementById('date').innerText= month+' '+dayNumber+' '+year;
 
 for(const btnElement of boxButton){
     const btn = btnElement;
@@ -23,11 +46,6 @@ for(const btnElement of boxButton){
         
         const p = document.createElement('p');
         
-
-        const date = new Date()
-        const hour = date.getHours()
-        const minute = date.getMinutes()
-        const second = date.getSeconds()
         
         const time = hour+":"+minute+":"+second+" AM";
         p.innerHTML =`<span class = 'mb-2'>You have Completed the task Fix Mobile Button Issue at  ${time}</span>`;
@@ -42,6 +60,7 @@ for(const btnElement of boxButton){
         
 
 
+        
 
         
     })
@@ -50,5 +69,6 @@ for(const btnElement of boxButton){
 document.getElementById('clear-btn').addEventListener('click',function(){
     document.getElementById('activity-massage').innerHTML=``;
 })
+
 
 
