@@ -83,5 +83,15 @@ document.getElementById('clear-btn').addEventListener('click',function(){
     document.getElementById('activity-massage').innerHTML=``;
 })
 
+document.getElementById('theme-btn').addEventListener('click',function(){
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById('body').classList.remove(`bg-gray-300`);
+    document.body.style.backgroundColor = '#' + randomColor;
 
+})
+
+
+document.getElementById('discover-new-btn').addEventListener('click',function(){
+    window.location.href='./blog.html'
+})
 

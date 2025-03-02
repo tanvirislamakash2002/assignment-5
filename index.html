@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+
+    <!-- daisyUi and tailwindcss link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="bg-gray-200 p-1">
+<body id="body" class="bg-gray-200 p-1">
     
     <header class="max-w-screen-2xl mx-auto mb-5">
-        <nav class="flex justify-between bg-white p-5 rounded-3xl mt-5">
+        <nav class="flex justify-between bg-white p-5 rounded-3xl mt-5 shadow-lg">
             <div class="flex items-center gap-2">
                 <img src="./assets/logo.png" alt="">
                 <div class="text-3xl flex">
@@ -27,7 +29,7 @@
                     <h2 id="number-reduce" class="text-3xl font-bold">23</h2>
                 </div>
                 <div class="">
-                    <img src="./assets/theme-btn.png" alt="">
+                    <div id="theme-btn" class="cursor-pointer"><img src="./assets/theme-btn.png" alt=""></div>
                 </div>
             </div>
         </nav>
@@ -49,7 +51,7 @@
                         <h2 id="task-assigned" class="text-4xl font-bold">6</h2>
                     </div> 
                 </div>
-                <div class="flex items-center gap-6 col-span-2 bg-gradient-to-r to-blue-300 from-blue-600 p-4 rounded-2xl text-white h28">
+                <div id="discover-new-btn" class="flex items-center gap-6 col-span-2 bg-gradient-to-r to-blue-300 from-blue-600 p-4 rounded-2xl text-white h-28 cursor-pointer">
                     <img class="pl-6" src="./assets/board.png" alt="">
                     <div class="text-3xl">
                         <h2>Discover Something</h2>
