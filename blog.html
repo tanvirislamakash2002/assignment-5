@@ -37,12 +37,12 @@
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-1: What are the different ways to select an element in the DOM?</h1>
         <p class="text-gray-600 text-lg">
-
-            <ol class="p-8 text-lg list-decimal">
-                <li>querySelector('.class-name')</li>
-                <li>querySelectorAll('.class-name')</li>
-                <li>getElementById('id-name')</li>
-                <li>getElementsByClassName('class-name')</li>
+            
+            <ol class="p-8 pt-6 text-lg list-decimal">
+                <li>document.querySelector('.class-name')</li>
+                <li>document.querySelectorAll('.class-name')</li>
+                <li>document.getElementById('id-name')</li>
+                <li>document.getElementsByClassName('class-name')</li>
             </ol>
         </p>
     </div>
@@ -50,7 +50,7 @@
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
         <p class="text-gray-600 text-lg">
-            <ol class="p-8 text-lg list-decimal">
+            <ol class="p-8 pt-6 text-lg list-decimal">
                 <li>textContent show the text inside the target element including hidden text</li>
                 <li>innerText show the text inside the target element but it does not show the hidden text</li>
                 <li>innerHTML show the text inside the target element with html tag</li>
@@ -70,25 +70,24 @@
     <!-- question 5 -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-        <p class="text-gray-600 p-5 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto explicabo minus natus libero eius amet eaque, a delectus ipsum.</p>
+        <p class="text-gray-600 p-5 text-lg">
+            <ol class="p-8 pt-6 text-lg list-decimal">
+                <li>To Create an element: document.createElement('element name')</li>
+                <li>To Add an element: First select the element then selected_element.appendChild(the element that you want to add);</li>
+                <li>To Remove an element: First select the element then selected_element.remove();</li>
+            </ol>
+        </p>
     </div>
 </section> 
 
 
-<div id="test">
-    <div class="">fds
-        <p>33</p>
-    </div>
-</div>
 
     <script>
         document.getElementById('back-to-desk').addEventListener('click',function(){
         window.location.href='./index.html'
         })
 
-        // testing question
-        const test = document.getElementById('test').innerHTML;
-        console.log(test)
+
     </script>
     
 </body>
