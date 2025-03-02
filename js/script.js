@@ -55,25 +55,11 @@ for(const btnElement of boxButton){
         p.classList.add('p-2')
         p.classList.add('rounded-xl')
 
+        const taskLeft = parseInt(document.getElementById('task-assigned').innerText)
 
-        
-
-        const btnLength = boxButton.length;
-
-        let countDisabled = 0;
-        for(let i = 0; i<btnLength; i++){
-            const y = boxButton[i].getAttribute('disabled');
-            if(y === 'disabled'){
-                countDisabled++
-            }
-        }
-        
-        if(countDisabled >= btnLength){
+        if(taskLeft === 0){
             alert('congrats!!! You have completed all the current task')
-        }
-
-        
-        
+        }        
 
         
     })
