@@ -8,8 +8,9 @@
         <!-- daisyUi and tailwindcss link  -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
 </head>
-<body class="bg-gray-200 p-1">
+<body class="bg-[#F4F7FF] p-1">
 
     <header class="max-w-screen-2xl mx-auto mb-5">
         <nav class="flex justify-between bg-white p-5 rounded-3xl mt-5 shadow-lg">
@@ -23,7 +24,7 @@
 
             <!-- checkbox number  -->
             <div class="flex gap-7 items-center">
-                <button id="back-to-desk" class="btn bg-blue-500 text-white rounded-xl">Back to Desk</button>
+                <button id="back-to-desk" class="btn bg-[#3752FD] text-white rounded-xl text-xl p-6">Back to Desk</button>
             </div>
         </nav>
     </header>
@@ -36,20 +37,20 @@
      <!-- question 1  -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="text-gray-600 text-lg">
+        <p class="text-gray-800 text-lg">
             
             <ol class="p-8 pt-6 text-lg list-decimal">
-                <li>document.querySelector('.class-name')</li>
-                <li>document.querySelectorAll('.class-name')</li>
-                <li>document.getElementById('id-name')</li>
-                <li>document.getElementsByClassName('class-name')</li>
+                <li class="font-semibold">document.querySelector('.class-name')</li>
+                <li class="font-semibold">document.querySelectorAll('.class-name')</li>
+                <li class="font-semibold">document.getElementById('id-name')</li>
+                <li class="font-semibold">document.getElementsByClassName('class-name')</li>
             </ol>
         </p>
     </div>
     <!-- question 2 -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-        <p class="text-gray-600 text-lg">
+        <p class="text-gray-800 text-lg">
             <ol class="p-8 pt-6 text-lg list-decimal">
                 <li>textContent show the text inside the target element including hidden text</li>
                 <li>innerText show the text inside the target element but it does not show the hidden text</li>
@@ -60,21 +61,21 @@
     <!-- question 3 -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-3: What is event delegation in the DOM?</h1>
-        <p class="text-gray-600 p-5 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto explicabo minus natus libero eius amet eaque, a delectus ipsum.</p>
+        <p class="text-gray-800 p-5 text-lg">It is a pattern based on event bubbling concept. It allow handle events in DOM and find out the target.</p>
     </div>
     <!-- question 4 -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-4: What is event bubbling in the DOM?</h1>
-        <p class="text-gray-600 p-5 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto explicabo minus natus libero eius amet eaque, a delectus ipsum.</p>
+        <p class="text-gray-800 p-5 text-lg">It is a mechanism where an event triggered on a child element spread to upward through its parent element in the DOM. It allows parent elements to respond to events triggered by their child elements.</p>
     </div>
     <!-- question 5 -->
     <div class="bg-white rounded-lg mb-5">
         <h1 class="text-xl font-bold border border-t-0 border-l-0 border-r-0 border-dashed border-gray-300 p-5">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-        <p class="text-gray-600 p-5 text-lg">
+        <p class="text-gray-800 text-lg">
             <ol class="p-8 pt-6 text-lg list-decimal">
-                <li>To Create an element: document.createElement('element name')</li>
-                <li>To Add an element: First select the element then selected_element.appendChild(the element that you want to add);</li>
-                <li>To Remove an element: First select the element then selected_element.remove();</li>
+                <li>To Create an element: <span class="font-semibold">document.createElement('element name')</span></li>
+                <li>To Add an element: <span class="font-semibold">First select the element then selected_element.appendChild(the element that you want to add)</span></li>
+                <li>To Remove an element: <span class="font-semibold">First select the element then selected_element.remove()</span></li>
             </ol>
         </p>
     </div>
